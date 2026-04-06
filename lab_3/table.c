@@ -13,7 +13,7 @@ Table *init_table(){
     return table;
 }
 
-Status table_insert(Table *table, const char *key, InfoType value){
+Table_Status table_insert(Table *table, const char *key, InfoType value){
     if (!table) return TABLE_ERR_MEMORY;
 
     KeySpace *curr = table->head;
